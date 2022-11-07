@@ -1,0 +1,356 @@
+@charset "UTF-8";
+/*Обнуление*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*-------fonts-------------*/
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?1r7dry');
+  src:  url('../fonts/icomoon.eot?1r7dry#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?1r7dry') format('truetype'),
+    url('../fonts/icomoon.woff?1r7dry') format('woff'),
+    url('../fonts/icomoon.svg?1r7dry#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-facebook2:before {
+  content: "\ea91";
+}
+.icon-instagram:before {
+  content: "\ea92";
+}
+.icon-telegram:before {
+  content: "\ea95";
+}
+.icon-vk:before {
+  content: "\ea98";
+}
+.icon-youtube:before {
+  content: "\ea9d";
+  padding-right: 10px;
+}
+.icon-youtube2:before {
+  content: "\ea9e";
+}
+/* ------Шрифт-------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500;600;700&display=swap');
+/* ------------------------------ */
+body {
+  position: relative;
+  font-family: sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 150%;
+  background-color: #F0F0F0;
+}
+
+.resource-link {
+  color: rgb(70, 43, 100);
+  text-decoration: underline;
+  transition: all 0.3s linear;
+}
+
+.resource-link:hover {
+  color: rgb(101, 37, 173);
+}
+
+.wraper {
+}
+
+[class*="__container"] {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.video-img {
+  position: relative;
+  height: 650px;
+  margin-bottom: 30px;
+}
+
+.video-img__container {
+  position: relative;
+  width: 100%;
+  height: 100%; 
+}
+
+ .video-img img {
+ position: absolute;
+ top: 0;
+ left: 0;
+ width: 100%;
+ height: 100%; 
+}
+
+.video-link__container {
+  padding: 0;
+}
+
+.current-link {
+  display: flex;
+  justify-content: end;
+  padding-top: 10px;
+  font-family: 'Caveat', cursive;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #000000;
+  transition: all 0.3s ease-out;
+}
+
+.current-link:hover {
+  color: #e65858;
+}
+
+
+/* description */
+
+.description {
+  padding: 15px 0;
+}
+
+.description h1 {
+  margin: 0px 0 10px 0;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.description__main {
+  padding: 10px 0;
+}
+
+/* links */
+.links {
+  padding: 15px 0 25px 0;
+}
+
+.links__title {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.links-list li:not(:last-child){
+  margin-bottom: 10px;
+}
+
+/* footer */
+.footer {
+  padding: 30px 0;
+  background-color: #e6e6e6;
+}
+
+.footer__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; 
+}
+
+.youtube {
+  font-size: 32px;
+  color: rgb(37, 36, 36);
+  transition: all 0.2s ease-out;
+}
+
+.youtube:hover {
+  color: rgb(235, 69, 69);
+}
+
+.social-media {
+  display: flex;
+  column-gap: 12px;
+}
+
+.social-media a {
+  font-size: 20px;
+  color: rgb(37, 36, 36);
+}
+
+.social-media a:hover {
+  font-size: 21px;
+} 
+
+.good-life {
+  font-family: 'Caveat', cursive;
+  text-transform: uppercase;
+}
+
+@media (max-width: 1180px) {
+  .video-link__container {
+    padding: 0 15px;
+  }
+}
+
+@media (max-width: 992px) {
+  .video-img {
+    height: 500px;
+  }
+}
+
+@media (max-width: 768px) {
+  .video-img {
+    height: 400px;
+  }
+
+  body {
+    font-size: 22px;
+  }
+
+  .description h1 {
+    font-size: 26px;
+  }
+
+  .links__title {
+    font-size: 22px;
+  }
+
+  .good-life {
+    font-size: 18px;
+  }
+
+  .current-link {
+   font-size: 18px;
+  }
+}
+
+@media (max-width: 645px) {
+  .video-img {
+    height: 300px;
+  }
+
+  .description h1 {
+    margin-bottom: 0;
+  }
+
+  .social-media {
+    column-gap: 20px;
+  }
+  
+  .social-media a {
+    font-size: 26px;
+  }
+
+  .current-link {
+    padding-top: 5px;
+  }
+}
+
+@media (max-width: 535px) {
+  .video-img {
+    height: 250px;
+  }
+
+  .footer__container {
+    display: flex;
+    flex-direction: column-reverse;
+    row-gap: 20px;
+  }
+}
+
+@media (max-width: 450px) {
+  body {
+    font-size: 18px;
+  }
+
+  .video-img {
+    height: 200px;
+  }
+
+  .description {
+    padding: 10px 0;
+  }
+
+  .links {
+    padding: 10px 0;
+  }
+
+  .footer {
+    padding: 15px 0;
+  }
+}
