@@ -1,0 +1,93 @@
+html,body {
+    height: 100%;
+    position: relative;
+    font-family: sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 150%;
+    background-color: #F0F0F0;
+  }
+  
+  body.lock {
+    overflow: hidden;
+  }
+  
+  .wraper {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .main {
+    flex: 1 1 0;
+    padding: 130px 0 0px 0;
+  }
+  
+  [class*="__container"] {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+
+  /*-------fonts-------------*/
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../../fonts/icomoon.eot?1r7dry');
+  src:  url('../../fonts/icomoon.eot?1r7dry#iefix') format('embedded-opentype'),
+    url('../../fonts/icomoon.ttf?1r7dry') format('truetype'),
+    url('../../fonts/icomoon.woff?1r7dry') format('woff'),
+    url('../../fonts/icomoon.svg?1r7dry#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-facebook2:before {
+  content: "\ea91";
+}
+.icon-instagram:before {
+  content: "\ea92";
+}
+.icon-telegram:before {
+  content: "\ea95";
+}
+.icon-vk:before {
+  content: "\ea98";
+}
+.icon-youtube:before {
+  content: "\ea9d";
+  padding-right: 10px;
+}
+.icon-youtube2:before {
+  content: "\ea9e";
+}
+/* ------Шрифт-------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500;600;700&display=swap');
+/* ------------------------- */
+
+
+@media (max-width: 768px) {
+  body {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 450px) {
+  body {
+    font-size: 18px;
+  }
+}
